@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>移动端登录页面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        .error-message {
+            color: #ff0000;
+            margin-top: 5px;
+            font-size: 12px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>移动端登录页面</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">用户名:</label>
+                <input type="text" id="username" placeholder="请输入用户名">
+                <div id="usernameError" class="error-message"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">密码:</label>
+                <input type="password" id="password" placeholder="请输入密码">
+                <div id="passwordError" class="error-message"></div>
+            </div>
+
+            <button type="submit">登录</button>
+        </form>
+    </div>
+
+    <script>
+        const loginForm = document.getElementById('loginForm');
+        const usernameInput = document.getElementById('username');
+        const passwordInput = document.getElementById('password');
+        const usernameError = document.getElementById('usernameError');
+        const passwordError = document.getElementById('passwordError');
+
+        loginForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // 清除错误提示
+            usernameError.textContent = '';
+            passwordError.textContent = '';
+
+            // 获取输入的用户名和密码
+            const username = usernameInput.value.trim();
+            const password = passwordInput.value.trim();
+
+            // 验证用户名和密码是否为空
+            if (username === '') {
+                usernameError.textContent = '用户名不能为空';
+                return;
+            }
+
+            if (password === '') {
+                passwordError.textContent = '密码不能为空';
+                return;
+            }
+
+            // 登录逻辑
+            // 这里可以发送登录请求或其他操作
+        });
+    </script>
+</body>
+</html>
