@@ -6,7 +6,7 @@ image{
   display: block;/*盒子的性质*/
   width: 100%;
 }
-.hero{height: 1000vh;}
+.hero{height: 100vh;}
 .hero image{
   height: 38.2vh;/*图片的宽高比，等比列， 不能模糊*/
 }
