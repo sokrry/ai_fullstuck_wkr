@@ -37,7 +37,7 @@
 
 - commit -m ''  不能乱写，写清楚完成了什么任务
     - leader 以后就看-m 后的东西了解 我们的工作
-- git status 随时了解我么仓库的状态
+- git status 随时了解暂存仓库的状态
 
 - git log
     git log --oneline,简短打印
@@ -54,3 +54,4 @@
     git reglog  查看所有操作记录
 
 - changes + untraked
+改变项 + 未追踪
