@@ -54,4 +54,4 @@
     git reglog  查看所有操作记录
 
 - changes + untraked
-改变项 + 未追踪
+改变项 + 未追踪e
