@@ -5,7 +5,10 @@
 - 情感分析
 - colab
    google 在线NLP平台
-    . ipynb notebook
+    . i p y n b  n o t e b o o k
 
 - pipeline 核心模块，启动模块
    像水管子
+
+- pipeline(task,modle)
+    遥遥领先，中文模型
