@@ -1,0 +1,10 @@
+/* 样式的重置 */
+image{
+  display: block;
+  widows: 100%;
+}
+/* 在page上设置字体行高，因为css有继承属性inherit*/
+page{
+  line-height: 1.5;
+  font-size: 32rpx;
+}
